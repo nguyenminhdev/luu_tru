@@ -17,7 +17,6 @@ init(autoreset=True)
 
 def xoa():
    os.system('cls' if os.name== 'nt' else 'clear')
-xoa()
 banner = f"""
 {Fore.YELLOW}╔══════════════════════════════════════════════════╗
 {Fore.YELLOW}║                                                  {Fore.YELLOW}║
