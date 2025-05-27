@@ -15,11 +15,6 @@ import sys
 
 init(autoreset=True)
 
-def kiem_tra_mang():
-    try:
-        socket.create_connection(("8.8.8.8", 53), timeout=3)
-    except OSError:
-        print("Mạng không ổn định hoặc bị mất kết nối. Vui lòng kiểm tra lại mạng.")
 def xoa():
    os.system('cls' if os.name== 'nt' else 'clear')
 xoa()
