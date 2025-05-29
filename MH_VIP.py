@@ -269,7 +269,7 @@ def show_menu():
     rows = [
         ("1", "👍 GOLIKE TIKTOK", "[green]ADB or Auto ✅[/green]"),
         ("2", "👻 GOLIKE SNAPCHAT", "[green]ADB or Auto click ✅[/green]"),
-        ("3", "🐦 GOLIKE TWITTER", "[green]Cookie ✅[/green]"),
+        ("3", "🐦 GOLIKE TWITTER", "[green]Cookie ❌[/green]"),
         ("4", "📘 TTC FACEBOOK", "[green]Cookie ✅[/green]"),
         ("5", "🎵 TTC TIKTOK", "[red]ADB or Auto click ❌[/red]"),
         ("6", "📘 TDS FACEBOOK", "[red]Cookie ❌[/red]"),
@@ -296,28 +296,28 @@ def main():
         if choice == "1":
             try: 
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_tik.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_tik27.py').text
               exec(code, globals())
             except:
               sys.exit()  
         elif choice == "2":
             try:
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_snap.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_snap27.py').text
               exec(code, globals())
             except:
               sys.exit()
         elif choice == "3":
             try:
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_twitter.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/go_twitter27.py').text
               exec(code, globals())
             except:
               sys.exit()
         elif choice == "4":
             try: 
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/ttc_fb.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/ttc_fb27.py').text
               exec(code, globals())
             except:
               sys.exit()
@@ -326,7 +326,7 @@ def main():
               print(f"{Fore.RED}Chưa cập nhập, vui lòng chọn tool online")
               exit()
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/ttc_tt.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/ttc_tt27.py').text
               exec(code, globals())
             except:
               sys.exit()
@@ -335,14 +335,14 @@ def main():
               print(f"{Fore.RED}Chưa cập nhập, vui lòng chọn tool online")
               exit()
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/tds_fb.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/tds_fb27.py').text
               exec(code, globals())
             except:
               sys.exit()
         elif choice == "7":
             try:
               kiem_tra_mang()
-              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/tds_tik.py').text
+              code = requests.get('https://raw.githubusercontent.com/nguyenminhdev/luu_tru/main/tds_tik27.py').text
               exec(code, globals())
             except:
               sys.exit()
