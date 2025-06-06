@@ -96,7 +96,6 @@ headers = {
 scraper = cloudscraper.create_scraper()
 def chonacc():
     json_data = {}
-    try:
       response = scraper.get(
         'https://gateway.golike.net/api/tiktok-account',
     
@@ -104,11 +103,7 @@ def chonacc():
         json=json_data
      ).json()
       return response
-    except Exception:
-      sys.exit()
-
 def nhannv(account_id):
-    try:
         params = {
             'account_id': account_id,
             'data': 'null',
@@ -121,11 +116,8 @@ def nhannv(account_id):
             json={}
         )
         return response.json()
-    except Exception:
-      sys.exit()
 
 def hoanthanh(ads_id, account_id):
-    try:
         json_data = {
             'ads_id': ads_id,
             'account_id': account_id,
@@ -140,11 +132,8 @@ def hoanthanh(ads_id, account_id):
             timeout=6
         )
         return response.json()
-    except Exception:
-      sys.exit()
 
 def baoloi(ads_id, object_id, account_id, loai):
-    try:
         json_data1 = {
             'description': 'Tôi đã làm Job này rồi',
             'users_advertising_id': ads_id,
@@ -168,8 +157,6 @@ def baoloi(ads_id, object_id, account_id, loai):
             headers=headers,
             json=json_data2,
         )
-    except Exception:
-      sys.exit()
 
 # Gọi chọn tài khoản một lần và xử lý lỗi nếu có
 chontktiktok = chonacc()
